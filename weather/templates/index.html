@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather</h1>
+        <form role="form">
+            <div class="input-group">
+                <input type="text" class="form-control" name="q" placeholder="San Francisco or 94107" value="{{ query }}">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </span>
+            </div>
+        </form>
+        <pre>{{ geocode_data }}</pre>
+    </div>
+</body>
+</html>
