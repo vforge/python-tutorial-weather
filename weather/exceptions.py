@@ -6,6 +6,11 @@ class WeatherError(Exception):
     pass
 
 
-class GeocodeError(WeatherError):
-    """Raised when geocode error occurs."""
+class OpenStreetMapError(WeatherError):
+    """Raised when OpenStreetMap error occurs."""
+    pass
+
+
+class OpenWeatherMapError(WeatherError):
+    """Raised when OpenWeatherMap error occurs."""
     pass
